@@ -13,17 +13,17 @@
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
-                <version>5.2.1</version>
+                <version>5.2.4</version>
                 <configuration>
-                    <url>jdbc:mysql://localhost:3306/monitoring</url>
-                    <user>root</user>
+                    <url>jdbc:postgresql://localhost:5432/monitoring</url>
+                    <user>postgres</user>
                     <password>root</password>
                 </configuration>
                 <dependencies>
                     <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>8.0.11</version>
+                        <groupId>org.postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                        <version>42.2.5</version>
                     </dependency>
                 </dependencies>
             </plugin>
